@@ -12,15 +12,15 @@ jobs:
     
     steps:
     - name: Checkout the repo
-    - uses: actions/checkout@v3
+      uses: actions/checkout@v3
     - name: Use Node.js v18.x
       uses: actions/setup-node@v3
       with:
         node-version: 18.x
         cache: 'npm'
     - name: Install project packages
-    - run: npm install
+      run: npm install
     - name: Run Unit tests
-    - run: npm run test:unit
+      run: npm run test:unit
     - name: Display SoftUni Username
-    - run: echo "michaelalukanova"
+      run: echo "michaelalukanova"
